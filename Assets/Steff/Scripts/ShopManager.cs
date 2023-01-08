@@ -24,7 +24,7 @@ public class ShopManager : MonoBehaviour
             itemPrice[i].text = items[i].itemPrice;
             itemImage[i].sprite = items[i].itemImage;
 
-            wallet.text = playerWallet.ItemID;
+            wallet.text = playerWallet.ItemID.ToString();
         }
 
 
@@ -36,4 +36,27 @@ public class ShopManager : MonoBehaviour
     {
         
     }
-}
+
+    public void Buy(int price)
+    {
+
+        if (playerWallet.ItemID - price > 0)
+        {
+            playerWallet.ItemID = playerWallet.ItemID - price;
+            wallet.text = playerWallet.ItemID.ToString();
+
+        }
+        else
+        {
+            Debug.Log("You don't have enough tokens.");
+        }
+
+    }
+
+    public void Play(int money = 10)
+    {
+        playerWallet.ItemID = playerWallet.ItemID + money;
+        wallet.text = playerWallet.ItemID.ToString();
+    }
+
+}//class end

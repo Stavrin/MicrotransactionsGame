@@ -17,3 +17,4 @@ MonoBehaviour:
   itemDescription: 
   itemPrice: 
   itemImage: {fileID: 0}
+  ItemID: 10
