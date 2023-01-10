@@ -11,6 +11,7 @@ public class ShopManager : MonoBehaviour
     [SerializeField] private TMPro.TextMeshProUGUI wallet;
     
     [SerializeField] ScriptableItem playerWallet;
+    [SerializeField] InventoryScriptable playerInventory;
     
     
     // Start is called before the first frame update
@@ -21,7 +22,7 @@ public class ShopManager : MonoBehaviour
         {
             itemName[i].text = items[i].itemName;
             itemDescription[i].text = items[i].itemDescription;
-            itemPrice[i].text = items[i].itemPrice;
+            itemPrice[i].text = items[i].itemPrice.ToString();
             itemImage[i].sprite = items[i].itemImage;
 
             wallet.text = playerWallet.ItemID.ToString();
@@ -37,13 +38,15 @@ public class ShopManager : MonoBehaviour
         
     }
 
-    public void Buy(int price)
+    public void Buy(ScriptableItem item)
     {
 
-        if (playerWallet.ItemID - price > 0)
+        if (playerWallet.ItemID - item.itemPrice >= 0)
         {
-            playerWallet.ItemID = playerWallet.ItemID - price;
+            playerWallet.ItemID = playerWallet.ItemID - item.itemPrice;
             wallet.text = playerWallet.ItemID.ToString();
+
+            playerInventory.items.Add(item);
 
         }
         else

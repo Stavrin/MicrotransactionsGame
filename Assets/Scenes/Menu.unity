@@ -934,10 +934,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1257190040}
         m_TargetAssemblyTypeName: ShopManager, Unity.Hypercasual
         m_MethodName: Buy
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: c36fbaa16de195d4da176d9a59c573f7,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableItem, Unity.Hypercasual
           m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2936,6 +2937,7 @@ MonoBehaviour:
   - {fileID: 811692654}
   wallet: {fileID: 1091368045}
   playerWallet: {fileID: 11400000, guid: 8682c6f6e6bd2f546b98fb7216768b2b, type: 2}
+  playerInventory: {fileID: 11400000, guid: e86c541ba090d884aa69f0539505a1cb, type: 2}
 --- !u!4 &1257190041
 Transform:
   m_ObjectHideFlags: 0
@@ -3253,10 +3255,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1257190040}
         m_TargetAssemblyTypeName: ShopManager, Unity.Hypercasual
         m_MethodName: Buy
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: 493512e26def10949a766ed6bec725bc,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableItem, Unity.Hypercasual
           m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4315,10 +4318,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1257190040}
         m_TargetAssemblyTypeName: ShopManager, Unity.Hypercasual
         m_MethodName: Buy
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: 8315223dc76d11b4e81d6ad11ef78176,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableItem, Unity.Hypercasual
           m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 

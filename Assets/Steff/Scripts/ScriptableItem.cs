@@ -10,7 +10,7 @@ public class ScriptableItem : ScriptableObject
 
     public string itemName;
     public string itemDescription;
-    public string itemPrice;
+    public int itemPrice;
     public Sprite itemImage;
 
     public int ItemID; //{ get { return itemID; } }
